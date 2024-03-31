@@ -6,12 +6,23 @@ package com.ktsession.demosession;
 
 public class TaskAction implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public TaskAction() {
-    }
+	private java.lang.String decision;
 
+	public TaskAction() {
+	}
 
+	public java.lang.String getDecision() {
+		return this.decision;
+	}
 
+	public void setDecision(java.lang.String decision) {
+		this.decision = decision;
+	}
+
+	public TaskAction(java.lang.String decision) {
+		this.decision = decision;
+	}
 
 }

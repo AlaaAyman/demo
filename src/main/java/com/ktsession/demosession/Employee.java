@@ -6,12 +6,23 @@ package com.ktsession.demosession;
 
 public class Employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Employee() {
-    }
+	private java.lang.String firstname;
 
+	public Employee() {
+	}
 
+	public java.lang.String getFirstname() {
+		return this.firstname;
+	}
 
+	public void setFirstname(java.lang.String firstname) {
+		this.firstname = firstname;
+	}
+
+	public Employee(java.lang.String firstname) {
+		this.firstname = firstname;
+	}
 
 }
